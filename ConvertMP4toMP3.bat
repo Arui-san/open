@@ -1,10 +1,16 @@
+<# : batch script
+@echo off
+powershell -ExecutionPolicy Bypass -NoProfile -File "%~f0"
+exit /b
+#>
+
 <#
 .SYNOPSIS
     MP4 → MP3 変換 GUI ツール
 .DESCRIPTION
     ffmpeg.exe（スクリプトと同じフォルダに配置）を利用し、
     MP4 ファイルを MP3 に変換する Windows Forms アプリケーション。
-    PowerShell 5.1+ / Windows 10・11 標準環境で動作。
+    ダブルクリックで起動可能。Windows 10・11 標準環境で動作。
 #>
 
 Set-StrictMode -Version Latest

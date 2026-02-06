@@ -1,6 +1,7 @@
 # MP4 → MP3 変換ツール
 
 PowerShell + Windows Forms で構成された、Windows 標準環境で動作する MP4 → MP3 変換 GUI ツールです。
+`.bat` 形式なのでダブルクリックだけで起動できます。
 
 ## 動作要件
 
@@ -20,25 +21,17 @@ PowerShell + Windows Forms で構成された、Windows 標準環境で動作す
 
 ### 2. ファイル配置
 
-以下のように `ConvertMP4toMP3.ps1` と `ffmpeg.exe` を **同じフォルダ** に配置します。
+以下のように `ConvertMP4toMP3.bat` と `ffmpeg.exe` を **同じフォルダ** に配置します。
 
 ```
 任意のフォルダ/
-├── ConvertMP4toMP3.ps1
+├── ConvertMP4toMP3.bat
 └── ffmpeg.exe
 ```
 
 ### 3. 実行方法
 
-`ConvertMP4toMP3.ps1` を右クリック →「**PowerShell で実行**」を選択します。
-
-> **実行ポリシーエラーが出る場合**
->
-> PowerShell を開き、以下のコマンドで直接起動してください（管理者権限不要）。
->
-> ```powershell
-> powershell -ExecutionPolicy Bypass -File ".\ConvertMP4toMP3.ps1"
-> ```
+`ConvertMP4toMP3.bat` をダブルクリックするだけで起動します。
 
 ## 使い方
 
